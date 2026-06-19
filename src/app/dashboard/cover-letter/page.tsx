@@ -1,10 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { Icon } from "@/app/components/Icons";
 
-export default function CoverLetterPage() {
+function CoverLetterContent() {
   const searchParams = useSearchParams();
   const [profile, setProfile] = useState<Record<string, string>>({});
   const [workHistory, setWorkHistory] = useState<Record<string, string>[]>([]);
@@ -218,5 +218,17 @@ export default function CoverLetterPage() {
 
       </div>
     </main>
+  );
+}
+
+export default function CoverLetterPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#0a0f1e] flex items-center justify-center">
+        <div className="text-blue-400 text-sm animate-pulse">Loading...</div>
+      </div>
+    }>
+      <CoverLetterContent />
+    </Suspense>
   );
 }
