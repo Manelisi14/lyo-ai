@@ -19,7 +19,9 @@ const navItems = [
   { icon: "profile", label: "My Profile", href: "/dashboard/profile" },
 ];
 
-function NavIcon({ name }: { name: string }) {
+function NavIcon({ name }: { name?: string }) {
+  if (!name) return <span className="inline-block h-4 w-4 rounded bg-slate-700" />;
+
   switch (name) {
     case "dashboard":
       return (
