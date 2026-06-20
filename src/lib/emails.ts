@@ -47,7 +47,7 @@ export function welcomeEmail(name: string) {
       Start by completing your profile so we can match you with the best opportunities
       across South Africa.
     </p>
-    <a href="https://lyo-ai.vercel.app/dashboard/profile" class="btn">
+    <a href="https://lyo-ai-bu52.vercel.app/dashboard/profile" class="btn">
       Complete My Profile →
     </a>
     <p class="text" style="font-size: 13px; color: #94a3b8;">
@@ -110,7 +110,7 @@ export function jobAlertEmail(name: string, jobs: {
     <p class="greeting">New opportunities for you, ${name}!</p>
     <p class="text">We found ${jobs.length} new opportunities matched to your profile:</p>
     ${jobCards}
-    <a href="https://lyo-ai.vercel.app/dashboard" class="btn">
+    <a href="https://lyo-ai-bu52.vercel.app/dashboard" class="btn">
       View All Opportunities →
     </a>
   </div>

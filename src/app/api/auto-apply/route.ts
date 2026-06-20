@@ -141,7 +141,7 @@ Return ONLY the cover letter text.`,
       Log in to LYO-AI to download your full tailored CV and cover letter as PDF.
     </p>
 
-    <a href="https://lyo-ai.vercel.app/dashboard/cv-fixer" style="display: block; text-align: center; color: #60a5fa; font-size: 13px; margin-top: 12px; text-decoration: none;">
+    <a href="https://lyo-ai-bu52.vercel.app/dashboard/cv-fixer" style="display: block; text-align: center; color: #60a5fa; font-size: 13px; margin-top: 12px; text-decoration: none;">
       Download Full CV & Cover Letter →
     </a>
   </div>
